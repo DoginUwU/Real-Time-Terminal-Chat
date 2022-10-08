@@ -1,0 +1,20 @@
+{
+  "name": "tterminal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+    "compile": "tsc --build && node --max-old-space-size=128 build/index.js"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.186",
+    "@types/node": "^18.7.19",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "firebase": "^9.11.0",
+    "lodash": "^4.17.21"
+  }
+}
